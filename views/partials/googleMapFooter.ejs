@@ -1,0 +1,59 @@
+
+
+ </div><!-- End Wrap -->
+
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-push-4">
+          <h4><b>PAUL ELIOT HUGHES, M.D.</b></h4></h4>
+          <p>650-343-5633</p>
+          <a href="https://www.facebook.com/restorationorthopedicmedicine/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/theromclinic/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-4 col-md-pull-4 push-down">
+          <p><b><u>San Mateo</u></b></p>
+          <p>100 S. Ellsworth Ave., Suite #504</p>
+          <p>San Mateo, CA 94401</p>
+          
+        </div>
+        <div class="col-md-4 push-down">
+          <p><b><u>Foster City</u></b></p>
+          <p>1098 Foster City Blvd., Suite #104</p>
+          <p>Foster City, CA 94404</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  <!-- Google Map API -->
+    <script>
+      function initMap() {
+        var uluru = {lat: 37.566539, lng: -122.324994};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru,
+          scrollwheel: false,
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Tc6iYjCBOm8nQ6yPZYkDPMLBAZ2wE1E&callback=initMap" async defer></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

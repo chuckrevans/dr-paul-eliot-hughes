@@ -1,0 +1,884 @@
+/* color palette 
+Teal - #2cb5b1
+*/
+
+* {
+  font-family: 'Amiko', sans-serif;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+	/*background-color:#fff;*/
+}
+
+/*text styling*/
+p { font-size:1em; }
+
+.margin {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -moz-margin-start: 0px;
+  -webkit-margin-end: 0px; 
+  -moz-margin-end: 0px;
+}
+
+.jumbotron { background:transparent; }
+
+/*vertical align*/
+#wrapper {
+    display: flex;            /* establish flex container */
+    align-items: center;      /* vertically center flex items */
+}
+#block {
+    /* vertical-align: middle; */
+    padding:0px 25px;
+}
+
+.active {
+  background-color:#2cb5b1 !important;
+}
+
+.btn-light {
+  border:2px solid white;
+  background-color:#2cb5b1;
+  color:#fff;
+  margin:20px;
+}
+.btn-light h5 {
+  padding:0px 5px;
+}
+.btn-light:hover {
+  background-color:#fff;
+  color:#2cb5b1;
+  border:2px solid white;
+}  
+
+
+/****************************************************************************
+NAVBAR 
+/***************************************************************************/
+
+
+/*---------------------------------------------- */
+/* Large Screen Navbar
+---------------------------------------------- */
+@media (min-width: 768px) {
+  nav {
+    padding-top:25px;
+    padding-bottom:25px;
+    transition:.35s; 
+  }
+  #NAV {
+    background-color:transparent;
+    border-bottom:none;
+    transition:.35s; 
+  }
+  #NAV.color {
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,.85);
+    transition:.35s; 
+  }
+  nav.shrink {
+    padding-top:5px;
+    padding-bottom:5px;
+    transition:.35s; 
+  }
+  /* Normal Links */
+  .btNav { 
+    color:#4a4a4a !important;
+    text-decoration:none;
+    border-bottom: 2px solid transparent;
+    width:0%;
+    transition: 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    white-space:nowrap;
+    padding-bottom:5px !important;
+  }
+  .btNav:hover {
+    color:#2cb5b1 !important; 
+    border-bottom:2px solid #2cb5b1;
+    background-color:transparent;
+    width:100%;
+    padding-bottom:5px !important;
+  }
+  .navbar-right {
+    padding-right:25px;
+  }
+}
+  
+
+/*---------------------------------------------- */
+/* Small Screen Navbar
+---------------------------------------------- */
+@media (max-width: 767px) {
+  nav {
+    padding-top:25px;
+    padding-bottom:25px;
+    transition:.35s;
+  }
+  #NAV {
+    background-color:transparent;
+    border-bottom:none;
+    transition:.35s;
+  }
+  .offcanvas {
+    background-color:#2cb5b1 !important;
+  }
+  #NAV.color {
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,.85);
+    transition:.35s;
+  }
+  nav.shrink {
+    padding-top:5px;
+    padding-bottom:5px;
+    transition:.35s;
+  }
+  #logo {
+    /*height:35px !important;*/
+    margin-top:-20px !important;
+  }
+  .btNav {
+    color:#fff !important;
+    transition:.15s !important;
+  }
+  .btNav:hover {
+    margin-left:5px !important; 
+    color:#2cb5b1 !important;
+  }
+  #closeMenu {
+    color:#fff !important;
+  }
+}
+
+
+
+/*---------------------------------------------- */
+/* General Navbar
+---------------------------------------------- */
+#logo {
+  height:55px;
+  margin-top:-25px;
+  margin-left:0px;
+  position:absolute;
+}
+#logo:hover {
+  opacity:.85; 
+}
+#burger {
+  border:1px solid transparent;
+  margin-right:25px; 
+}
+#burger:hover {
+  border:1px solid #4a4a4a;
+  background-color:transparent; 
+}
+#burger:focus {
+  background-color:transparent; 
+}
+#icon {
+  background-color:#4a4a4a; 
+}
+
+#closeMenu {
+  text-align:right;
+  font-size:30px;
+  margin-top:30px;
+  margin-right:20px;
+}
+#closeMenu:hover {
+  color:#2cb5b1;
+}
+
+
+
+/***************************************************************************
+INDEX
+***************************************************************************/
+
+/*---------------------------------------------- */
+/* Responsive (index + general)
+---------------------------------------------- */
+
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  .section1-2 div {
+    border-left:2px solid #fff;
+  }
+  .section-padding {
+    padding: 0px 25px !important;
+  }
+  .section-padding-lg {
+    padding: 0px 50px !important;
+  }
+  .section-padding-extra {
+    padding: 0px 50px !important;
+  }
+  .top-bottom-space-extra {
+    padding-top:25px; 
+    padding-bottom:25px; 
+  }
+  .top-bottom-space-extra-extra {
+    padding-top:100px; 
+    padding-bottom:100px; 
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+  #headline {
+    padding-bottom:100px;
+  }
+  .section1-1 {
+    padding-top:25px;
+  }
+  .section1-2 {
+    padding-bottom:35px;
+  }
+  .top-bottom-space {
+    padding-top:25px; 
+    padding-bottom:25px; 
+  }
+  .top-bottom-space-extra-extra {
+    padding-top:100px; 
+    padding-bottom:100px; 
+  }
+  .section-padding-extra {
+    padding: 0px 35px !important;
+  }
+}
+
+
+
+/*---------------------------------------------- */
+/* Sections
+---------------------------------------------- */
+
+#headline {
+  background: 
+  linear-gradient(
+		rgba(51,51,51,0.15), 
+		rgba(51,51,51,0.15)
+	),
+  url('../resources/freeStock/pexels-photo-196464.jpeg') no-repeat center center;
+  min-height:60vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:250px;
+  color:white;
+  text-align:center;
+  margin-bottom:0px;
+}
+#headline p {
+  font-size:1.15em;
+}
+
+/*section 1*/
+.section1-1 {
+  min-height:40vh;
+  background-color:#2cb5b1;
+  color:#fff;
+}
+.section1-2 {
+  min-height:40vh;
+  background-color:#2cb5b1;
+  color:#fff;
+}
+.section1-2 li a {
+  color:#fff;
+}
+.section1-3 {
+  min-height:40vh;
+  text-align:center;
+}
+.section1-3 h3:nth-of-type(2) {
+  color:#2cb5b1;
+}
+
+/*section 2*/
+.section2-1 {
+  min-height:40vh;
+  background: url('../resources/freeStock/pexels-photo-300849.jpeg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.section2-2 {
+  min-height:40vh;
+  background-color:#f2f2f2;
+}
+
+/*section 3*/
+.section3-1 {
+  min-height:40vh;
+  background-color:#fff;
+}
+.section3-2 {
+  min-height:40vh;
+  background: url('../resources/freeStock/pexels-photo-221210.jpeg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*section 4*/
+.section4-1 {
+  min-height:40vh;
+  background: url('../resources/freeStock/pexels-photo-24486.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.section4-2 {
+  min-height:40vh;
+  background-color:#f2f2f2;
+}
+
+/*section 5*/
+#section5 {
+  min-height:15vh;
+  background-color:#2cb5b1;
+  color:white;
+  text-align:center;
+}
+
+
+/***************************************************************************
+MEET THE DOCTOR
+***************************************************************************/
+
+/*---------------------------------------------- */
+/* Responsive (hughes)
+---------------------------------------------- */
+
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  #hughes-section1 h2, #hughes-section3 h2, #hughes-section4 h2 {
+    padding: 0px 20px !important;
+  }
+  .hughes-section3-1, .hughes-section3-2, .hughes-section3-3 {
+    padding: 0px 25px 25px 25px !important;
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+
+}
+
+
+/*---------------------------------------------- */
+/* Sections
+---------------------------------------------- */
+
+#hughes-headline {
+  background: 
+  linear-gradient(
+		rgba(51,51,51,0.15), 
+		rgba(51,51,51,0.1)
+	),
+  url('../resources/freeStock/pexels-photo-126401.jpeg') no-repeat center top;
+  min-height:50vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:225px;
+  color:white;
+  text-align:center;
+  margin-bottom:0px;
+}
+
+/*hughes-section 1*/
+#hughes-section1 {
+  background-color:#5b5b5b;
+  color:#fff;
+  padding-top:25px;
+  padding-bottom:35px;
+}
+
+
+/*hughes-section 2*/
+.hughes-section2-1 {
+  background-color:#fff;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+.hughes-section2-2 {
+  background-color:#e9e9e9;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+/*hughes-section 3*/
+#hughes-section3 {
+  padding-top:25px;
+  background-color:#2cb5b1;
+  color:#fff;  
+}
+
+/*hughes-section 4*/
+.hughes-section4-1 {
+  min-height:30vh;
+  background-color:#e9e9e9;
+}
+.hughes-section4-2 {
+  min-height:30vh;
+  background-color:#fff;
+}
+
+
+/***************************************************************************
+SPECIALTIES
+***************************************************************************/
+
+/*---------------------------------------------- */
+/* Responsive (specialties)
+---------------------------------------------- */
+
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  .spec-section5-1 {
+    min-height:30vh;
+    background-color:#e9e9e9;
+  }
+.spec-section5-2 {
+    min-height:30vh;
+    background-color:#fff;
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+  .spec-section5-1 {
+    min-height:20vh;
+    background-color:#e9e9e9;
+  }
+.spec-section5-2 {
+    min-height:20vh;
+    background-color:#fff;
+  }
+}
+
+
+/*---------------------------------------------- */
+/* Sections (specialties)
+---------------------------------------------- */
+
+#spec-headline {
+  min-height:50vh;
+  background: 
+  linear-gradient(
+		rgba(255,255,255,0.75),
+		rgba(51,51,51,0.2),
+		rgba(51,51,51,0.25)
+	),
+  url('../resources/freeStock/pexels-photo-346349.jpeg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:225px;
+  color:white;
+  text-align:center;
+  margin-bottom:0px;
+}
+#spec-headline p {
+  /*font-size:1.15em;*/
+}
+
+/*spec-section 1*/
+.spec-section1-1 {
+  min-height:25vh;
+  background-color:#fff;
+}
+.spec-section1-2 {
+  min-height:25vh;
+  background-color:#e9e9e9;
+}
+
+/*spec-section2*/
+#spec-section2 {
+  min-height:10vh;
+  background-color:#2cb5b1;
+  color:white;
+  text-align:center;
+}
+
+/*spection 3*/
+.spec-section3-1 {
+  min-height:20vh;
+  background-color:#e9e9e9;
+}
+.spec-section3-2 {
+  min-height:20vh;
+  background-color:#fff;
+}
+.spec-section3-3 {
+  min-height:20vh;
+  background-color:#e9e9e9;
+}
+
+/*spec-section 4*/
+.spec-section4-1 {
+  min-height:20vh;
+  background-color:#fff;
+}
+.spec-section4-2 {
+  min-height:20vh;
+  background-color:#e9e9e9;
+}
+.spec-section4-3 {
+  min-height:20vh;
+  background-color:#fff;
+}
+
+/*spection 5*/
+.spec-section5-3 {
+  min-height:30vh;
+  background-color:#e9e9e9;
+}
+
+/*spec-section 6*/
+#spec-section6 {
+  min-height:15vh;
+  background-color:#2cb5b1;
+  color:white;
+  text-align:center;
+}
+
+
+/***************************************************************************
+PATIENT INFO
+***************************************************************************/
+
+/*---------------------------------------------- */
+/* Responsive (patient info)
+---------------------------------------------- */
+
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  .patient-section1-1, .patient-section2-2, .patient-section3-1 {
+    background-color:#fff;
+  }
+  .patient-section1-2, .patient-section2-1, .patient-section3-2 {
+    background-color:#e9e9e9;
+  }
+  #patient-headline {
+    min-height:60vh;
+  }
+  .patient-section1-1 {
+    min-height:40vh;
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+  .patient-section1-1, .patient-section2-1, .patient-section3-1 {
+    background-color:#fff;
+  }
+  .patient-section1-2, .patient-section2-2, .patient-section3-2 {
+    background-color:#e9e9e9;
+  }
+  #patient-headline {
+    min-height:50vh;
+  }
+  .patient-section1-1 {
+    min-height:50vh;
+  }
+}
+
+
+/*---------------------------------------------- */
+/* Sections (patient info)
+---------------------------------------------- */
+
+#patient-headline {
+  background:
+  linear-gradient(
+		rgba(255,255,255,0.1),
+		rgba(255,255,255,0.1)
+	),
+  url('../resources/freeStock/pexels-photo-3.jpg') no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:225px;
+  color:white;
+  text-align:center;
+  margin-bottom:0px;
+}
+
+
+/*patient-section 1*/
+.patient-section1-2 {
+  min-height:40vh;
+}
+.patient-section1-2 li a {
+  color:#2cb5b1;
+}
+
+/*patient-section 2*/
+.patient-section2-1, .patient-section2-2 {
+  min-height:30vh;
+}
+.teal {
+  color:#2cb5b1 !important;
+}
+
+/*patient-section 3*/
+.patient-section3-1, .patient-section3-2 {
+  min-height:30vh;
+}
+
+/*patient-section 4*/
+#patient-section4 {
+  background-color:#2cb5b1;
+  color:white;
+}
+.patient-section4-1, .patient-section4-2 {
+  min-height:45vh;
+}
+
+
+/***************************************************************************
+CONTACT
+***************************************************************************/
+
+/*---------------------------------------------- */
+/* Responsive (contact)
+---------------------------------------------- */
+
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  #map {
+    min-height:70vh;
+    margin-top:10vh;
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+  #map {
+    min-height:45vh;
+    margin-top:20vh;
+  }
+}
+
+
+/*---------------------------------------------- */
+/* Sections (contact)
+---------------------------------------------- */
+
+
+
+
+/*contact-section 1*/
+.contact-section1-1 {
+  min-height:20vh;
+  background-color:#fff;
+  text-align:center;
+}
+.contact-section1-1 h2 {
+  padding-bottom:10px;
+}
+.contact-section1-2 {
+  min-height:20vh;
+  background-color:#2cb5b1;
+  color:white;
+  text-align:center;
+}
+.contact-section1-2 h3 {
+  padding-bottom:10px;
+}
+.contact-section1-3 {
+  min-height:20vh;
+  background-color:#e9e9e9;
+  text-align:center;
+}
+.contact-section1-3 h2 {
+  padding-bottom:10px;
+}
+
+
+
+/*BLOG*/
+#blog-headline {
+  background:
+  linear-gradient(
+		rgba(255,255,255,0.1),
+		rgba(255,255,255,0.1)
+	),
+  url('../resources/freeStock/pexels-photo-30788.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+  text-align:center;
+  color:#fff;
+  padding-top:300px;
+  margin-bottom:0px;
+}
+
+
+
+
+/***************************************************************************
+MODAL
+***************************************************************************/
+
+
+/*---------------------------------------------- */
+/* Payment Modal
+---------------------------------------------- */
+.modal-backdrop {
+  background-color:#2cb5b1;
+}
+.modal-backdrop.in {
+    opacity:.75;
+}
+/*Vertically Center Modal*/
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+/*no border radius on bootstrap modal*/
+.modal-content  {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+div.modal-content{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border:none;
+  background-color:#fff;
+}
+/*Modal Content Styling*/
+#paymentModal .modal-header h3, #paymentModal .modal-header h3 {
+	text-align: center;
+	font-weight: 200;
+}
+#paymentModal .modal-body h5, #paymentModal .modal-body h5 {
+	text-align: center;
+	font-weight:300;
+}
+#paymentModal .modal-body h3 {
+  color:#2cb5b1;
+  text-align:center;
+}
+#appointmentModal .modal-header h3, #appointmentModal .modal-header h3 {
+	text-align: center;
+	font-weight: 200;
+}
+#appointmentModal .modal-body h5, #appointmentModal .modal-body h5 {
+	text-align: center;
+	font-weight:300;
+}
+#appointmentModal .modal-body h3 {
+  color:#2cb5b1;
+  text-align:center;
+}
+/*label {*/
+/*	margin-top:15px;*/
+/*	font-weight:300;*/
+/*}*/
+.modal-close {
+	border:1px solid #2cb5b1;
+	background-color: #2cb5b1;
+	border-radius:2px;
+	color:white;
+	padding:5px;
+}
+.modal-close:hover {
+	opacity:.85;
+	color:white;
+}
+
+
+
+
+/****************************************************************************
+FOOTER 
+/***************************************************************************/
+
+/***  Medium Screens UP  ***/
+@media (min-width: 767px) {
+  .push-down {
+    padding-top:50px !important;
+  }
+}
+
+/***  Medium Screens DOWN  ***/
+@media (max-width: 767px) {
+  #footer {
+    padding:25px;
+  }
+}
+
+
+/* Pre Footer
+---------------------------------------------- */
+
+
+
+/* Footer Wrap
+---------------------------------------------- */
+/***  Wrapper for page content to push down footer  ***/
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -115px;
+  /* Pad bottom by footer height */
+  padding: 0 0 115px; }
+
+/***  Set the fixed height of the footer here  ***/
+#footer {
+  min-height: 115px;
+  text-align:center;
+  color:#e9e9e9;
+  background-color:#4a4a4a;
+  border-bottom:10px solid #2cb5b1;
+}
+#footer .col-md-4 {
+  padding:25px;
+}
+#footer i {
+  padding:10px;
+  color:#2cb5b1;
+}
+#footer i:hover {
+  opacity:.85;
+}

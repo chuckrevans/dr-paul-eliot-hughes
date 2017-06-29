@@ -94,7 +94,9 @@ NAVBAR
     transition:.35s; 
   }
   #NAV {
-    background-color:transparent;
+    /*background-color:transparent;*/
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,.85);
     border-bottom:none;
     transition:.35s; 
   }
@@ -144,7 +146,9 @@ NAVBAR
     transition:.35s;
   }
   #NAV {
-    background-color:transparent;
+    /*background-color:transparent;*/
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,.85);
     border-bottom:none;
     transition:.35s;
   }
@@ -229,6 +233,9 @@ INDEX
 
 /***  Medium Screens UP  ***/
 @media (min-width: 767px) {
+  #headline {
+    padding-top:250px;
+  }
   .section1-2 div {
     border-left:2px solid #fff;
   }
@@ -254,6 +261,7 @@ INDEX
 /***  Medium Screens DOWN  ***/
 @media (max-width: 767px) {
   #headline {
+    padding-top:200px;
     padding-bottom:100px;
   }
   .section1-1 {
@@ -288,12 +296,11 @@ INDEX
 		rgba(51,51,51,0.15)
 	),
   url('../resources/freeStock/pexels-photo-196464.jpeg') no-repeat center center;
-  min-height:60vh;
+  min-height:62vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top:250px;
   color:white;
   text-align:center;
   margin-bottom:0px;
@@ -304,12 +311,12 @@ INDEX
 
 /*section 1*/
 .section1-1 {
-  min-height:40vh;
+  min-height:38vh;
   background-color:#2cb5b1;
   color:#fff;
 }
 .section1-2 {
-  min-height:40vh;
+  min-height:38vh;
   background-color:#2cb5b1;
   color:#fff;
 }
@@ -317,7 +324,7 @@ INDEX
   color:#fff;
 }
 .section1-3 {
-  min-height:40vh;
+  min-height:38vh;
   text-align:center;
 }
 .section1-3 h3:nth-of-type(2) {
@@ -386,7 +393,8 @@ MEET THE DOCTOR
 /***  Medium Screens UP  ***/
 @media (min-width: 767px) {
   #hughes-headline {
-    padding-top:300px;
+    min-height:60vh;
+    padding-top:225px;
   }
   #hughes-section1 h2, #hughes-section3 h2, #hughes-section4 h2 {
     padding: 0px 20px !important;
@@ -399,7 +407,9 @@ MEET THE DOCTOR
 /***  Medium Screens DOWN  ***/
 @media (max-width: 767px) {
   #hughes-headline {
-    padding-top:225px;
+    min-height:80vh;
+    padding-top:200px;
+    padding-bottom:150px;
   }
 }
 
@@ -411,11 +421,10 @@ MEET THE DOCTOR
 #hughes-headline {
   background: 
   linear-gradient(
-		rgba(51,51,51,0.15), 
+		rgba(51,51,51,0.1),
 		rgba(51,51,51,0.1)
 	),
   url('../resources/officePhotos/hugheslab.jpg') no-repeat center center;
-  min-height:70vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -474,6 +483,9 @@ SPECIALTIES
 
 /***  Medium Screens UP  ***/
 @media (min-width: 767px) {
+  #spec-headline {
+    padding-top:225px;
+  }
   .spec-section5-1 {
     min-height:30vh;
     background-color:#e9e9e9;
@@ -486,13 +498,20 @@ SPECIALTIES
 
 /***  Medium Screens DOWN  ***/
 @media (max-width: 767px) {
+  #spec-headline {
+    padding-top:175px;
+    padding-bottom:50px;
+  }
   .spec-section5-1 {
     min-height:20vh;
     background-color:#e9e9e9;
   }
-.spec-section5-2 {
+  .spec-section5-2 {
     min-height:20vh;
     background-color:#fff;
+  }
+  .font-shrink {
+    font-size:1.5em;
   }
 }
 
@@ -505,16 +524,14 @@ SPECIALTIES
   min-height:50vh;
   background: 
   linear-gradient(
-		rgba(255,255,255,0.75),
-		rgba(51,51,51,0.2),
-		rgba(51,51,51,0.25)
+		rgba(51,51,51,0.1),
+		rgba(51,51,51,0.1)
 	),
   url('../resources/freeStock/pexels-photo-346349.jpeg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top:225px;
   color:white;
   text-align:center;
   margin-bottom:0px;
@@ -539,6 +556,8 @@ SPECIALTIES
   background-color:#2cb5b1;
   color:white;
   text-align:center;
+  padding-top:25px;
+  padding-bottom:25px;
 }
 
 /*spection 3*/
@@ -602,6 +621,7 @@ PATIENT INFO
   }
   #patient-headline {
     min-height:60vh;
+    padding-top:225px;
   }
   .patient-section1-1 {
     min-height:40vh;
@@ -617,10 +637,12 @@ PATIENT INFO
     background-color:#e9e9e9;
   }
   #patient-headline {
-    min-height:50vh;
+    min-height:80vh;
+    padding-top:150px;
+    padding-bottom:150px;
   }
   .patient-section1-1 {
-    min-height:50vh;
+    min-height:40vh;
   }
 }
 
@@ -632,15 +654,14 @@ PATIENT INFO
 #patient-headline {
   background:
   linear-gradient(
-		rgba(255,255,255,0.1),
-		rgba(255,255,255,0.1)
+		rgba(51,51,51,0.1),
+		rgba(51,51,51,0.1)
 	),
   url('../resources/freeStock/pexels-photo-3.jpg') no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top:225px;
   color:white;
   text-align:center;
   margin-bottom:0px;
@@ -689,16 +710,17 @@ CONTACT
 /***  Medium Screens UP  ***/
 @media (min-width: 767px) {
   #map {
-    min-height:70vh;
-    margin-top:10vh;
+    min-height:80vh;
   }
 }
 
 /***  Medium Screens DOWN  ***/
 @media (max-width: 767px) {
   #map {
-    min-height:45vh;
-    margin-top:20vh;
+    min-height:55vh;
+  }
+  .top-pad {
+    padding-top:25px;
   }
 }
 
@@ -706,9 +728,6 @@ CONTACT
 /*---------------------------------------------- */
 /* Sections (contact)
 ---------------------------------------------- */
-
-
-
 
 /*contact-section 1*/
 .contact-section1-1 {
@@ -743,8 +762,8 @@ CONTACT
 #blog-headline {
   background:
   linear-gradient(
-		rgba(255,255,255,0.1),
-		rgba(255,255,255,0.1)
+		rgba(51,51,51,0.1),
+		rgba(51,51,51,0.1)
 	),
   url('../resources/freeStock/pexels-photo-30788.jpg') no-repeat center center;
   -webkit-background-size: cover;
